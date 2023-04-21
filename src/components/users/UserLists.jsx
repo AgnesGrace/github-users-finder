@@ -3,13 +3,13 @@ import UserListItems from "./UserListItems";
 import GithubContext from "../../context/github/GithubContext";
 
 function UserLists() {
-  const { users, loading, fetchUsers } = useContext(GithubContext);
+  const { users, loading } = useContext(GithubContext);
 
   //   const [users, setUsers] = useState([]);
   //   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+  // useEffect(() => {
+  //   fetchUsers();
+  // }, []);
 
   //   const fetchUsers = async () => {
   //     const response = await fetch(`${BASE_URL}/users`);
